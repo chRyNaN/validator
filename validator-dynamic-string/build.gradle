@@ -1,0 +1,67 @@
+apply plugin: "kotlin-multiplatform"
+
+group rootProject.libraryGroup
+version rootProject.libraryVersion
+
+kotlin {
+    targets {
+        jvm()
+        js()
+    }
+    sourceSets {
+        commonMain {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-stdlib-common"
+
+                api project(":validator-core")
+            }
+        }
+        commonTest {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-test-common"
+                implementation "org.jetbrains.kotlin:kotlin-test-annotations-common"
+            }
+        }
+        jvmMain {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-stdlib"
+            }
+        }
+        jvmTest {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-test-junit"
+            }
+        }
+        jsMain {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-stdlib-js"
+            }
+        }
+        jsTest {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-test-js"
+            }
+        }
+    }
+}
+
+configurations {
+    compileClasspath
+}
+
+publishing {
+    publications {
+        kotlinMultiplatform {
+            artifactId = "validator-dynamic-string"
+        }
+        jvm {
+            artifactId = "validator-dynamic-string-jvm"
+        }
+        js {
+            artifactId = "validator-dynamic-string-js"
+        }
+        metadata {
+            artifactId = "validator-dynamic-string-metadata"
+        }
+    }
+}
