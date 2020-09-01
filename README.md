@@ -132,7 +132,7 @@ There's a convenience operator function on the `ValidationResult` class to deter
 ```kotlin
 val result = validate(input)
 
-if (result.contains(Null)) {  }
+if (result.contains(ExampleError.Null)) {  }
 ```
 
 ## Common Validators
