@@ -34,14 +34,6 @@ allprojects {
     repositories {
         jcenter()
     }
-
-    // Allows use of Experimental Kotlin features, such as, Kotlin Contracts
-    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
-        kotlinOptions {
-            freeCompilerArgs = ["-Xuse-experimental=kotlin.Experimental", "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi"]
-            jvmTarget = JavaVersion.VERSION_1_8
-        }
-    }
 }
 
 subprojects {
