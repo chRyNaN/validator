@@ -1,7 +1,9 @@
+import com.chrynan.validator.buildSrc.LibraryConstants
+
 apply plugin: "kotlin-multiplatform"
 
-group rootProject.libraryGroup
-version rootProject.libraryVersion
+group LibraryConstants.group
+version LibraryConstants.versionName
 
 kotlin {
     targets {
@@ -20,19 +22,9 @@ kotlin {
                 implementation "org.jetbrains.kotlin:kotlin-test-annotations-common"
             }
         }
-        jvmMain {
-            dependencies {
-                implementation "org.jetbrains.kotlin:kotlin-stdlib"
-            }
-        }
         jvmTest {
             dependencies {
                 implementation "org.jetbrains.kotlin:kotlin-test-junit"
-            }
-        }
-        jsMain {
-            dependencies {
-                implementation "org.jetbrains.kotlin:kotlin-stdlib-js"
             }
         }
         jsTest {
