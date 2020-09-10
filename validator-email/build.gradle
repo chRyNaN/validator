@@ -9,6 +9,7 @@ kotlin {
     targets {
         jvm()
         js()
+        ios()
     }
     sourceSets {
         commonMain {
@@ -51,6 +52,12 @@ publishing {
         }
         js {
             artifactId = "validator-email-js"
+        }
+        iosArm64 {
+            artifactId = "validator-email-ios-arm64"
+        }
+        iosX64 {
+            artifactId = "validator-email-ios-x64"
         }
         metadata {
             artifactId = "validator-email-metadata"

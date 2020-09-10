@@ -9,6 +9,7 @@ kotlin {
     targets {
         jvm()
         js()
+        ios()
     }
     sourceSets {
         commonMain {
@@ -51,6 +52,12 @@ publishing {
         }
         js {
             artifactId = "validator-dynamic-string-js"
+        }
+        iosArm64 {
+            artifactId = "validator-dynamic-string-ios-arm64"
+        }
+        iosX64 {
+            artifactId = "validator-dynamic-string-ios-x64"
         }
         metadata {
             artifactId = "validator-dynamic-string-metadata"
