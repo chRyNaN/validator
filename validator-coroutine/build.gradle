@@ -1,0 +1,67 @@
+import com.chrynan.validator.buildSrc.LibraryConstants
+
+apply plugin: "kotlin-multiplatform"
+
+group LibraryConstants.group
+version LibraryConstants.versionName
+
+kotlin {
+    targets {
+        jvm()
+        js()
+        ios()
+    }
+    sourceSets {
+        commonMain {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-stdlib-common"
+                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
+
+                implementation project(":validator-core")
+            }
+        }
+        commonTest {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-test-common"
+                implementation "org.jetbrains.kotlin:kotlin-test-annotations-common"
+            }
+        }
+        jvmTest {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-test-junit"
+            }
+        }
+        jsTest {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-test-js"
+            }
+        }
+    }
+}
+
+configurations {
+    compileClasspath
+}
+
+publishing {
+    publications {
+        kotlinMultiplatform {
+            artifactId = "validator-coroutine"
+        }
+        jvm {
+            artifactId = "validator-coroutine-jvm"
+        }
+        js {
+            artifactId = "validator-coroutine-js"
+        }
+        iosArm64 {
+            artifactId = "validator-coroutine-ios-arm64"
+        }
+        iosX64 {
+            artifactId = "validator-coroutine-ios-x64"
+        }
+        metadata {
+            artifactId = "validator-coroutine-metadata"
+        }
+    }
+}

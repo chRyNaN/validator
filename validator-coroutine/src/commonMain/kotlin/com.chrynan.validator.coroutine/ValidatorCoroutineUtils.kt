@@ -1,0 +1,22 @@
+@file:Suppress("unused")
+
+package com.chrynan.validator.coroutine
+
+import com.chrynan.validator.ValidationError
+import com.chrynan.validator.ValidationResult
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.onEach
+
+fun <T> Flow<ValidationResult<T>>.onValid(block: suspend (value: T) -> Unit): Flow<ValidationResult<T>> =
+    onEach {
+        if (it is ValidationResult.Valid) {
+            block(it.value)
+        }
+    }
+
+fun <T> Flow<ValidationResult<T>>.onInvalid(block: suspend (errors: List<ValidationError>) -> Unit): Flow<ValidationResult<T>> =
+    onEach {
+        if (it is ValidationResult.Invalid) {
+            block(it.errors.toList())
+        }
+    }
