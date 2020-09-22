@@ -5,7 +5,11 @@ package com.chrynan.validator.coroutine
 import com.chrynan.validator.ValidationError
 import com.chrynan.validator.ValidationResult
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
+
+fun <T, R> Flow<T>.validate(block: suspend (T) -> ValidationResult<R>): Flow<ValidationResult<R>> =
+    map { block(it) }
 
 fun <T> Flow<ValidationResult<T>>.onValid(block: suspend (value: T) -> Unit): Flow<ValidationResult<T>> =
     onEach {
