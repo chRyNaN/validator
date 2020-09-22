@@ -24,11 +24,11 @@ sealed class ValidationResult<T> {
 
         @Suppress("UNCHECKED_CAST")
         private fun castToValid(other: Any?): Valid<T>? =
-                try {
-                    other as? Valid<T>
-                } catch (_: Throwable) {
-                    null
-                }
+            try {
+                other as? Valid<T>
+            } catch (_: Throwable) {
+                null
+            }
     }
 
     /**
