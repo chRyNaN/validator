@@ -22,6 +22,11 @@ class UriValidatorTest {
     }
 
     @Test
+    fun inputWithoutSchemeSeparatorIsInvalid() {
+        assertInvalid(validator.validate("Invalid"))
+    }
+
+    @Test
     fun httpsUriWithoutSchemeIsInvalid() {
         val result =
             validator.validate("//john.doe@www.example.com:123/forum/questions/?tag=networking&order=newest#top")

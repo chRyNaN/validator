@@ -21,6 +21,12 @@ sealed class UriValidationError(override val details: String? = null) : Validati
     object SchemeIsBlank : UriValidationError(details = "Input is not a valid URI because the Scheme was blank.")
 
     /**
+     * The provided input value to the [UriValidator] did not contain a Scheme separator (':').
+     */
+    object MissingSchemeSeparator :
+        UriValidationError(details = "Input is not a valid URI because the Scheme was not distinguishable from the rest of the URI since there was no Scheme separator (':').")
+
+    /**
      * The provided input value to the [UriValidator] contained a Scheme that did not begin with a letter which is
      * invalid.
      */

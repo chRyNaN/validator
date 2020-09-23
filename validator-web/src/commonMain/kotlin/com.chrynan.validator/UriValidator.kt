@@ -35,7 +35,11 @@ class UriValidator : Validator<String?, String> {
 
         if (input.isBlank()) return Invalid(UriValidationError.InputIsBlank)
 
-        val schemeResult = validateScheme(input.substringBefore(SCHEME_SEPARATOR))
+        val schemeEndIndex = input.indexOf(SCHEME_SEPARATOR)
+
+        if (schemeEndIndex == -1) return Invalid(UriValidationError.MissingSchemeSeparator)
+
+        val schemeResult = validateScheme(input.substring(startIndex = 0, endIndex = schemeEndIndex))
 
         if (schemeResult is ValidationResult.Invalid) return schemeResult
 
