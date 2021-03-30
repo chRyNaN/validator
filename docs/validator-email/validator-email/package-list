@@ -1,0 +1,13 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.chrynan.validator////PointingToDeclaration/validator-email/com.chrynan.validator/index.md
+$dokka.location:com.chrynan.validator/EmailValidationError.InputIsNull///PointingToDeclaration/validator-email/com.chrynan.validator/-email-validation-error/-input-is-null/index.md
+$dokka.location:com.chrynan.validator/EmailValidationError.InvalidFormat///PointingToDeclaration/validator-email/com.chrynan.validator/-email-validation-error/-invalid-format/index.md
+$dokka.location:com.chrynan.validator/EmailValidationError///PointingToDeclaration/validator-email/com.chrynan.validator/-email-validation-error/index.md
+$dokka.location:com.chrynan.validator/EmailValidationError/details/#/PointingToDeclaration/validator-email/com.chrynan.validator/-email-validation-error/details.md
+$dokka.location:com.chrynan.validator/EmailValidator.Companion///PointingToDeclaration/validator-email/com.chrynan.validator/-email-validator/-companion/index.md
+$dokka.location:com.chrynan.validator/EmailValidator///PointingToDeclaration/validator-email/com.chrynan.validator/-email-validator/index.md
+$dokka.location:com.chrynan.validator/EmailValidator/EmailValidator/#/PointingToDeclaration/validator-email/com.chrynan.validator/-email-validator/-email-validator.md
+$dokka.location:com.chrynan.validator/EmailValidator/validate/#kotlin.String?/PointingToDeclaration/validator-email/com.chrynan.validator/-email-validator/validate.md
+com.chrynan.validator
+

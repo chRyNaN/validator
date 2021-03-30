@@ -1,6 +1,9 @@
 import com.chrynan.validator.buildSrc.LibraryConstants
 
 apply plugin: "kotlin-multiplatform"
+apply plugin: "maven-publish"
+apply plugin: "org.jetbrains.dokka"
+apply plugin: "com.chrynan.target.plugin"
 
 group LibraryConstants.group
 version LibraryConstants.versionName
@@ -42,25 +45,37 @@ configurations {
     compileClasspath
 }
 
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
 publishing {
-    publications {
-        kotlinMultiplatform {
-            artifactId = "validator-dynamic-string"
+    repositories {
+        maven {
+            url "https://repo.repsy.io/mvn/chrynan/public"
+
+            credentials {
+                username = project.findProperty("repsyUsername") ?: System.getenv("repsyUsername")
+                password = project.findProperty("repsyToken") ?: System.getenv("repsyToken")
+            }
         }
-        jvm {
-            artifactId = "validator-dynamic-string-jvm"
-        }
-        js {
-            artifactId = "validator-dynamic-string-js"
-        }
-        iosArm64 {
-            artifactId = "validator-dynamic-string-ios-arm64"
-        }
-        iosX64 {
-            artifactId = "validator-dynamic-string-ios-x64"
-        }
-        metadata {
-            artifactId = "validator-dynamic-string-metadata"
+    }
+}
+
+// Target Information
+kotlinTargetDataGenerator {
+    generateJson = true
+    generateSvg = true
+    outputPath = "${projectDir.path}/targets"
+}
+
+// Documentation
+tasks.named("dokkaGfm") {
+    dokkaSourceSets {
+        configureEach {
+            includes.from("Module.md")
         }
     }
 }

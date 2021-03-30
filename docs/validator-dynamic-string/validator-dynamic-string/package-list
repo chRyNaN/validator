@@ -1,0 +1,56 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.chrynan.validator////PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/index.md
+$dokka.location:com.chrynan.validator//dynamicStringValidator/#kotlin.Function1[com.chrynan.validator.DynamicStringConfig,kotlin.Unit]/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/dynamic-string-validator.md
+$dokka.location:com.chrynan.validator/DynamicStringConfig///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-config/index.md
+$dokka.location:com.chrynan.validator/DynamicStringConfig/allowNull/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-config/allow-null.md
+$dokka.location:com.chrynan.validator/DynamicStringConfig/blankSpaceType/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-config/blank-space-type.md
+$dokka.location:com.chrynan.validator/DynamicStringConfig/matches/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-config/matches.md
+$dokka.location:com.chrynan.validator/DynamicStringConfig/maxLength/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-config/max-length.md
+$dokka.location:com.chrynan.validator/DynamicStringConfig/minLength/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-config/min-length.md
+$dokka.location:com.chrynan.validator/DynamicStringConfig/mustContain/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-config/must-contain.md
+$dokka.location:com.chrynan.validator/DynamicStringConfig/mustNotContain/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-config/must-not-contain.md
+$dokka.location:com.chrynan.validator/DynamicStringConfig/prefix/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-config/prefix.md
+$dokka.location:com.chrynan.validator/DynamicStringConfig/suffix/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-config/suffix.md
+$dokka.location:com.chrynan.validator/DynamicStringConfig/supportedChars/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-config/supported-chars.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.BlankNotAllowed///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-blank-not-allowed/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.EmptyNotAllowed///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-empty-not-allowed/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MaxLengthExceeded///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-max-length-exceeded/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MaxLengthExceeded/MaxLengthExceeded/#kotlin.Int#kotlin.Int/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-max-length-exceeded/-max-length-exceeded.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MaxLengthExceeded/length/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-max-length-exceeded/length.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MaxLengthExceeded/max/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-max-length-exceeded/max.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MinLengthNotReached///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-min-length-not-reached/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MinLengthNotReached/MinLengthNotReached/#kotlin.Int#kotlin.Int/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-min-length-not-reached/-min-length-not-reached.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MinLengthNotReached/length/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-min-length-not-reached/length.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MinLengthNotReached/min/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-min-length-not-reached/min.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MustNotBeNull///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-must-not-be-null/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MustNotContainValue///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-must-not-contain-value/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MustNotContainValue/MustNotContainValue/#kotlin.String/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-must-not-contain-value/-must-not-contain-value.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.MustNotContainValue/value/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-must-not-contain-value/value.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.PrefixNotFound///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-prefix-not-found/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.RegexNotMatched///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-regex-not-matched/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.RequiredValueNotFound///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-required-value-not-found/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.RequiredValueNotFound/RequiredValueNotFound/#kotlin.String/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-required-value-not-found/-required-value-not-found.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.RequiredValueNotFound/value/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-required-value-not-found/value.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.SuffixNotFound///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-suffix-not-found/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.UnsupportedCharUsed///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-unsupported-char-used/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.UnsupportedCharUsed/UnsupportedCharUsed/#kotlin.Char/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-unsupported-char-used/-unsupported-char-used.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError.UnsupportedCharUsed/char/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/-unsupported-char-used/char.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidationError/details/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validation-error/details.md
+$dokka.location:com.chrynan.validator/DynamicStringValidator///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validator/index.md
+$dokka.location:com.chrynan.validator/DynamicStringValidator/validate/#kotlin.String?/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-dynamic-string-validator/validate.md
+$dokka.location:com.chrynan.validator/InvalidDynamicStringConfigException///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-invalid-dynamic-string-config-exception/index.md
+$dokka.location:com.chrynan.validator/InvalidDynamicStringConfigException/InvalidDynamicStringConfigException/#kotlin.String#com.chrynan.validator.DynamicStringConfig?/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-invalid-dynamic-string-config-exception/-invalid-dynamic-string-config-exception.md
+$dokka.location:com.chrynan.validator/StringBlankSpaceType.ALLOW_BLANK_NOT_EMPTY///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-string-blank-space-type/-a-l-l-o-w_-b-l-a-n-k_-n-o-t_-e-m-p-t-y/index.md
+$dokka.location:com.chrynan.validator/StringBlankSpaceType.ALLOW_BLANK_NOT_EMPTY/name/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-string-blank-space-type/-a-l-l-o-w_-b-l-a-n-k_-n-o-t_-e-m-p-t-y/name.md
+$dokka.location:com.chrynan.validator/StringBlankSpaceType.ALLOW_BLANK_NOT_EMPTY/ordinal/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-string-blank-space-type/-a-l-l-o-w_-b-l-a-n-k_-n-o-t_-e-m-p-t-y/ordinal.md
+$dokka.location:com.chrynan.validator/StringBlankSpaceType.ALLOW_EMPTY_NOT_BLANK///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-string-blank-space-type/-a-l-l-o-w_-e-m-p-t-y_-n-o-t_-b-l-a-n-k/index.md
+$dokka.location:com.chrynan.validator/StringBlankSpaceType.ALLOW_EMPTY_NOT_BLANK/name/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-string-blank-space-type/-a-l-l-o-w_-e-m-p-t-y_-n-o-t_-b-l-a-n-k/name.md
+$dokka.location:com.chrynan.validator/StringBlankSpaceType.ALLOW_EMPTY_NOT_BLANK/ordinal/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-string-blank-space-type/-a-l-l-o-w_-e-m-p-t-y_-n-o-t_-b-l-a-n-k/ordinal.md
+$dokka.location:com.chrynan.validator/StringBlankSpaceType.NOT_EMPTY_OR_BLANK///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-string-blank-space-type/-n-o-t_-e-m-p-t-y_-o-r_-b-l-a-n-k/index.md
+$dokka.location:com.chrynan.validator/StringBlankSpaceType.NOT_EMPTY_OR_BLANK/name/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-string-blank-space-type/-n-o-t_-e-m-p-t-y_-o-r_-b-l-a-n-k/name.md
+$dokka.location:com.chrynan.validator/StringBlankSpaceType.NOT_EMPTY_OR_BLANK/ordinal/#/PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-string-blank-space-type/-n-o-t_-e-m-p-t-y_-o-r_-b-l-a-n-k/ordinal.md
+$dokka.location:com.chrynan.validator/StringBlankSpaceType///PointingToDeclaration/validator-dynamic-string/com.chrynan.validator/-string-blank-space-type/index.md
+com.chrynan.validator
+

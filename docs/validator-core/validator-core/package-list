@@ -1,0 +1,32 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.chrynan.validator////PointingToDeclaration/validator-core/com.chrynan.validator/index.md
+$dokka.location:com.chrynan.validator//Invalid/#kotlin.Array[com.chrynan.validator.ValidationError]/PointingToDeclaration/validator-core/com.chrynan.validator/-invalid.md
+$dokka.location:com.chrynan.validator//Invalid/#kotlin.collections.List[com.chrynan.validator.ValidationError]/PointingToDeclaration/validator-core/com.chrynan.validator/-invalid.md
+$dokka.location:com.chrynan.validator//Valid/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/validator-core/com.chrynan.validator/-valid.md
+$dokka.location:com.chrynan.validator//ValidationException/#kotlin.String?#com.chrynan.validator.ValidationResult[TypeParam(bounds=[kotlin.Any?])]#kotlin.reflect.KClass[TypeParam(bounds=[com.chrynan.validator.ValidationResult[*]])]/PointingToDeclaration/validator-core/com.chrynan.validator/-validation-exception.md
+$dokka.location:com.chrynan.validator//assertContains/com.chrynan.validator.ValidationResult[TypeParam(bounds=[kotlin.Any?])]#com.chrynan.validator.ValidationError/PointingToDeclaration/validator-core/com.chrynan.validator/assert-contains.md
+$dokka.location:com.chrynan.validator//assertInvalid/#com.chrynan.validator.ValidationResult[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/validator-core/com.chrynan.validator/assert-invalid.md
+$dokka.location:com.chrynan.validator//assertValid/#com.chrynan.validator.ValidationResult[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/validator-core/com.chrynan.validator/assert-valid.md
+$dokka.location:com.chrynan.validator//contains/com.chrynan.validator.ValidationResult[TypeParam(bounds=[kotlin.Any?])]#com.chrynan.validator.ValidationError/PointingToDeclaration/validator-core/com.chrynan.validator/contains.md
+$dokka.location:com.chrynan.validator//isInvalid/com.chrynan.validator.ValidationResult[TypeParam(bounds=[kotlin.Any?])]#/PointingToDeclaration/validator-core/com.chrynan.validator/is-invalid.md
+$dokka.location:com.chrynan.validator//isValid/com.chrynan.validator.ValidationResult[TypeParam(bounds=[kotlin.Any?])]#/PointingToDeclaration/validator-core/com.chrynan.validator/is-valid.md
+$dokka.location:com.chrynan.validator/ValidationError///PointingToDeclaration/validator-core/com.chrynan.validator/-validation-error/index.md
+$dokka.location:com.chrynan.validator/ValidationError/details/#/PointingToDeclaration/validator-core/com.chrynan.validator/-validation-error/details.md
+$dokka.location:com.chrynan.validator/ValidationErrorNotFoundException///PointingToDeclaration/validator-core/com.chrynan.validator/-validation-error-not-found-exception/index.md
+$dokka.location:com.chrynan.validator/ValidationErrorNotFoundException/ValidationErrorNotFoundException/#com.chrynan.validator.ValidationError/PointingToDeclaration/validator-core/com.chrynan.validator/-validation-error-not-found-exception/-validation-error-not-found-exception.md
+$dokka.location:com.chrynan.validator/ValidationException///PointingToDeclaration/validator-core/com.chrynan.validator/-validation-exception/index.md
+$dokka.location:com.chrynan.validator/ValidationResult.Invalid///PointingToDeclaration/validator-core/com.chrynan.validator/-validation-result/-invalid/index.md
+$dokka.location:com.chrynan.validator/ValidationResult.Invalid/errors/#/PointingToDeclaration/validator-core/com.chrynan.validator/-validation-result/-invalid/errors.md
+$dokka.location:com.chrynan.validator/ValidationResult.Invalid/toString/#/PointingToDeclaration/validator-core/com.chrynan.validator/-validation-result/-invalid/to-string.md
+$dokka.location:com.chrynan.validator/ValidationResult.Valid///PointingToDeclaration/validator-core/com.chrynan.validator/-validation-result/-valid/index.md
+$dokka.location:com.chrynan.validator/ValidationResult.Valid/equals/#kotlin.Any?/PointingToDeclaration/validator-core/com.chrynan.validator/-validation-result/-valid/equals.md
+$dokka.location:com.chrynan.validator/ValidationResult.Valid/hashCode/#/PointingToDeclaration/validator-core/com.chrynan.validator/-validation-result/-valid/hash-code.md
+$dokka.location:com.chrynan.validator/ValidationResult.Valid/toString/#/PointingToDeclaration/validator-core/com.chrynan.validator/-validation-result/-valid/to-string.md
+$dokka.location:com.chrynan.validator/ValidationResult.Valid/value/#/PointingToDeclaration/validator-core/com.chrynan.validator/-validation-result/-valid/value.md
+$dokka.location:com.chrynan.validator/ValidationResult///PointingToDeclaration/validator-core/com.chrynan.validator/-validation-result/index.md
+$dokka.location:com.chrynan.validator/Validator///PointingToDeclaration/validator-core/com.chrynan.validator/-validator/index.md
+$dokka.location:com.chrynan.validator/Validator/invoke/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/validator-core/com.chrynan.validator/-validator/invoke.md
+$dokka.location:com.chrynan.validator/Validator/validate/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/validator-core/com.chrynan.validator/-validator/validate.md
+com.chrynan.validator
+

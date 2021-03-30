@@ -1,0 +1,8 @@
+$dokka.format:gfm-v1
+$dokka.linkExtension:md
+$dokka.location:com.chrynan.validator.coroutine////PointingToDeclaration/validator-coroutine/com.chrynan.validator.coroutine/index.md
+$dokka.location:com.chrynan.validator.coroutine//onInvalid/kotlinx.coroutines.flow.Flow[com.chrynan.validator.ValidationResult[TypeParam(bounds=[kotlin.Any?])]]#kotlin.coroutines.SuspendFunction1[kotlin.collections.List[com.chrynan.validator.ValidationError],kotlin.Unit]/PointingToDeclaration/validator-coroutine/com.chrynan.validator.coroutine/on-invalid.md
+$dokka.location:com.chrynan.validator.coroutine//onValid/kotlinx.coroutines.flow.Flow[com.chrynan.validator.ValidationResult[TypeParam(bounds=[kotlin.Any?])]]#kotlin.coroutines.SuspendFunction1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/validator-coroutine/com.chrynan.validator.coroutine/on-valid.md
+$dokka.location:com.chrynan.validator.coroutine//validate/kotlinx.coroutines.flow.Flow[TypeParam(bounds=[kotlin.Any?])]#kotlin.coroutines.SuspendFunction1[TypeParam(bounds=[kotlin.Any?]),com.chrynan.validator.ValidationResult[TypeParam(bounds=[kotlin.Any?])]]/PointingToDeclaration/validator-coroutine/com.chrynan.validator.coroutine/validate.md
+com.chrynan.validator.coroutine
+
