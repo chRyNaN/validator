@@ -6,9 +6,9 @@ object LibraryConstants {
     const val group = "com.chrynan.validator"
     const val owner = "chrynan"
     const val repoName = "validator"
-    const val versionName = "0.3.0"
-    const val versionCode = 3
-    const val versionDescription = "Pre-release 0.3.0"
+    const val versionName = "0.4.0"
+    const val versionCode = 4
+    const val versionDescription = "Release 0.4.0"
     const val license = "Apache-2.0"
     const val vcsUrl = "https://github.com/chRyNaN/validator.git"
 }
