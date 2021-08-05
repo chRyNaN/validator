@@ -1,24 +1,38 @@
 import com.chrynan.validator.buildSrc.LibraryConstants
 
 apply plugin: "kotlin-multiplatform"
+apply plugin: "com.android.library"
 apply plugin: "maven-publish"
 apply plugin: "org.jetbrains.dokka"
-apply plugin: "com.chrynan.target.plugin"
 
 group LibraryConstants.group
 version LibraryConstants.versionName
 
 kotlin {
+    android {
+        publishAllLibraryVariants()
+        publishLibraryVariantsGroupedByFlavor = true
+    }
     targets {
+        android()
         jvm()
-        js()
+        js(BOTH) {
+            browser {
+                testTask {
+                    useKarma {
+                        useFirefox()
+                    }
+                }
+            }
+            nodejs()
+        }
         ios()
     }
     sourceSets {
         commonMain {
             dependencies {
                 implementation "org.jetbrains.kotlin:kotlin-stdlib-common"
-                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
+                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1"
 
                 implementation project(":validator-core")
             }
@@ -27,6 +41,11 @@ kotlin {
             dependencies {
                 implementation "org.jetbrains.kotlin:kotlin-test-common"
                 implementation "org.jetbrains.kotlin:kotlin-test-annotations-common"
+            }
+        }
+        androidTest {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-test-junit"
             }
         }
         jvmTest {
@@ -38,6 +57,46 @@ kotlin {
             dependencies {
                 implementation "org.jetbrains.kotlin:kotlin-test-js"
             }
+        }
+    }
+}
+
+android {
+    compileSdkVersion LibraryConstants.Android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion LibraryConstants.Android.minSdkVersion
+        targetSdkVersion LibraryConstants.Android.targetSdkVersion
+        versionCode LibraryConstants.versionCode
+        versionName LibraryConstants.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile "src/androidMain/AndroidManifest.xml"
+            java.srcDirs = ["src/androidMain/kotlin"]
+            res.srcDirs = ["src/androidMain/res"]
+        }
+        test {
+            java.srcDirs = ["src/androidTest/kotlin"]
+            res.srcDirs = ["src/androidTest/res"]
         }
     }
 }
@@ -63,13 +122,6 @@ publishing {
             }
         }
     }
-}
-
-// Target Information
-kotlinTargetDataGenerator {
-    generateJson = true
-    generateSvg = true
-    outputPath = "${projectDir.path}/targets"
 }
 
 // Documentation

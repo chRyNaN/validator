@@ -8,5 +8,3 @@ include ":validator-phone"
 include ":validator-mac"
 include ":validator-dynamic-string"
 include ":validator-coroutine"
-
-enableFeaturePreview("GRADLE_METADATA")
