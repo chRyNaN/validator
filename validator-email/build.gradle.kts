@@ -20,6 +20,11 @@ kotlin {
         jvm()
         js(BOTH) {
             browser {
+                testTask {
+                    useKarma {
+                        useFirefox()
+                    }
+                }
             }
             nodejs()
         }
@@ -68,7 +73,7 @@ android {
             jvmTarget = "1.8"
             // Opt-in to experimental compose APIs
             freeCompilerArgs = listOf(
-                "-Xopt-in=kotlin.RequiresOptIn"
+                    "-Xopt-in=kotlin.RequiresOptIn"
             )
         }
     }
