@@ -20,11 +20,6 @@ kotlin {
         jvm()
         js(BOTH) {
             browser {
-                testTask {
-                    useKarma {
-                        useFirefox()
-                    }
-                }
             }
             nodejs()
         }
