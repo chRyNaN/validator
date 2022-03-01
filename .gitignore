@@ -27,3 +27,5 @@ build/
 
 # Mac
 .DS_Store
+
+kotlin-js-store
