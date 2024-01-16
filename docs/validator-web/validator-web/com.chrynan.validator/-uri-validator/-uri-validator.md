@@ -1,11 +1,6 @@
 //[validator-web](../../../index.md)/[com.chrynan.validator](../index.md)/[UriValidator](index.md)/[UriValidator](-uri-validator.md)
 
+# UriValidator
 
-
-# UriValidator  
-[common]  
-Content  
-fun [UriValidator](-uri-validator.md)()  
-
-
-
+[common]\
+constructor()

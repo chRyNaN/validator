@@ -1,11 +1,6 @@
 //[validator-dynamic-string](../../../../index.md)/[com.chrynan.validator](../../index.md)/[DynamicStringValidationError](../index.md)/[RequiredValueNotFound](index.md)/[RequiredValueNotFound](-required-value-not-found.md)
 
+# RequiredValueNotFound
 
-
-# RequiredValueNotFound  
-[common]  
-Content  
-fun [RequiredValueNotFound](-required-value-not-found.md)(value: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
-
-
-
+[common]\
+constructor(value: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))

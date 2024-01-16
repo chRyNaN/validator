@@ -1,13 +1,9 @@
 //[validator-core](index.md)
 
+# validator-core
 
+## Packages
 
-# validator-core  
-
-
-## Packages  
-  
-|  Name | 
+| Name |
 |---|
-| <a name="com.chrynan.validator////PointingToDeclaration/"></a>[com.chrynan.validator](validator-core/com.chrynan.validator/index.md)|
-
+| [com.chrynan.validator](validator-core/com.chrynan.validator/index.md) |

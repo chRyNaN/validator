@@ -1,13 +1,9 @@
 //[validator-mac](index.md)
 
+# validator-mac
 
+## Packages
 
-# validator-mac  
-
-
-## Packages  
-  
-|  Name | 
+| Name |
 |---|
-| <a name="com.chrynan.validator////PointingToDeclaration/"></a>[com.chrynan.validator](validator-mac/com.chrynan.validator/index.md)|
-
+| [com.chrynan.validator](validator-mac/com.chrynan.validator/index.md) |

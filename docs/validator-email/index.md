@@ -1,13 +1,9 @@
 //[validator-email](index.md)
 
+# validator-email
 
+## Packages
 
-# validator-email  
-
-
-## Packages  
-  
-|  Name | 
+| Name |
 |---|
-| <a name="com.chrynan.validator////PointingToDeclaration/"></a>[com.chrynan.validator](validator-email/com.chrynan.validator/index.md)|
-
+| [com.chrynan.validator](validator-email/com.chrynan.validator/index.md) |

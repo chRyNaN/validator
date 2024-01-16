@@ -1,13 +1,9 @@
 //[validator-phone](index.md)
 
+# validator-phone
 
+## Packages
 
-# validator-phone  
-
-
-## Packages  
-  
-|  Name | 
+| Name |
 |---|
-| <a name="com.chrynan.validator////PointingToDeclaration/"></a>[com.chrynan.validator](validator-phone/com.chrynan.validator/index.md)|
-
+| [com.chrynan.validator](validator-phone/com.chrynan.validator/index.md) |
