@@ -1,0 +1,60 @@
+name: Publish
+
+on:
+  workflow_dispatch: {}
+  push:
+    tags:
+      - '**'
+
+env:
+  repsyUsername: ${{ secrets.REPSYUSERNAME }}
+  repsyToken: ${{ secrets.REPSYPASSWORD }}
+
+jobs:
+  deploy-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu' # See 'Supported distributions' for available options
+          java-version: '17'
+
+      - name: Linux deploy
+        run: |
+          ./gradlew publish --no-daemon --stacktrace
+
+  deploy-macos:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu' # See 'Supported distributions' for available options
+          java-version: '17'
+
+      - name: Mac deploy
+        run: |
+          ./gradlew publish --no-daemon --stacktrace
+
+  deploy-windows:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu' # See 'Supported distributions' for available options
+          java-version: '17'
+
+      - name: Windows deploy
+        run: |
+          ./gradlew publish --no-daemon --stacktrace

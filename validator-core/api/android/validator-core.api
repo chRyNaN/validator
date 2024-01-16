@@ -6,8 +6,9 @@ public final class com/chrynan/validator/ValidationErrorNotFoundException : com/
 	public fun <init> (Lcom/chrynan/validator/ValidationError;)V
 }
 
-public class com/chrynan/validator/ValidationException : java/lang/RuntimeException {
+public class com/chrynan/validator/ValidationException : java/lang/RuntimeException, com/chrynan/validator/ValidationError {
 	public fun <init> ()V
+	public fun getDetails ()Ljava/lang/String;
 	public final fun getErrors ()Ljava/util/List;
 }
 
@@ -56,6 +57,7 @@ public final class com/chrynan/validator/ValidationResultUtilsKt {
 	public static final fun isInvalid (Lcom/chrynan/validator/ValidationResult;)Z
 	public static final fun isValid (Lcom/chrynan/validator/ValidationResult;)Z
 	public static final fun toResult (Lcom/chrynan/validator/ValidationResult;)Ljava/lang/Object;
+	public static final fun validate (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
 }
 
 public abstract interface class com/chrynan/validator/Validator {
