@@ -55,3 +55,21 @@ fun <T> ValidationResult<T>.toResult(): Result<T> =
         is ValidationResult.Valid -> Result.success(value = this.value)
         is ValidationResult.Invalid -> Result.failure(exception = ValidationException(errors = this.errors))
     }
+
+/**
+ * Converts this Kotlin [Result] instance into a [ValidationResult] instance. If the [Result.getOrNull] returns a
+ * non-null value, then a [ValidationResult.Valid] instance is returned with that value. Otherwise, a
+ * [ValidationResult.Invalid] instance is returned with a [ValidationException] as the [ValidationError] wrapping the
+ * optional [Result.failure] value.
+ */
+fun <T> Result<T>.validate(): ValidationResult<T> {
+    val value = this.getOrNull()
+
+    return if (value != null) {
+        Valid(value = value)
+    } else {
+        val cause = this.exceptionOrNull()
+
+        Invalid(errors = listOf(ValidationException(cause = cause)))
+    }
+}

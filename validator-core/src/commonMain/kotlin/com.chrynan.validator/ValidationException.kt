@@ -11,7 +11,11 @@ open class ValidationException internal constructor(
     message: String? = null,
     cause: Throwable? = null,
     val errors: List<ValidationError> = emptyList()
-) : RuntimeException(message, cause)
+) : RuntimeException(message, cause),
+    ValidationError {
+
+    override val details: String? = message
+}
 
 /**
  * A creator function for the [ValidationException] class.
