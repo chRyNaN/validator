@@ -17,8 +17,7 @@ dependencyResolutionManagement {
 
 plugins {
     // Apply the foojay-resolver plugin to allow automatic download of JDKs
-    id("org.gradle.toolchains.foojay-resolver-convention") version "0.7.0"
-////                                                   # available:"0.8.0"
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 
     // See https://jmfayard.github.io/refreshVersions
     id("de.fayard.refreshVersions") version "0.60.3"
@@ -33,4 +32,3 @@ include(":validator-web")
 include(":validator-phone")
 include(":validator-mac")
 include(":validator-dynamic-string")
-include(":validator-coroutine")

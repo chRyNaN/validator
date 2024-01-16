@@ -1,9 +1,7 @@
 @file:Suppress("unused")
 
-package com.chrynan.validator.coroutine
+package com.chrynan.validator
 
-import com.chrynan.validator.ValidationError
-import com.chrynan.validator.ValidationResult
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach

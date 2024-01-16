@@ -209,12 +209,6 @@ repositories {
 implementation "com.chrynan.validator:validator-core:$VERSION"
 ```
 
-**Coroutines:**
-
-```groovy
-implementation "com.chrynan.validator:validator-coroutine:$VERSION"
-```
-
 **Dynamic String:**
 
 ```groovy

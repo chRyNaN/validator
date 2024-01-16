@@ -21,7 +21,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/validator-core" />
-            <option value="$PROJECT_DIR$/validator-coroutine" />
             <option value="$PROJECT_DIR$/validator-dynamic-string" />
             <option value="$PROJECT_DIR$/validator-email" />
             <option value="$PROJECT_DIR$/validator-field" />
