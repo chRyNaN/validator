@@ -2,12 +2,13 @@ public abstract interface class com/chrynan/validator/ValidationError {
 	public abstract fun getDetails ()Ljava/lang/String;
 }
 
-public final class com/chrynan/validator/ValidationErrorNotFoundException : java/lang/RuntimeException {
+public final class com/chrynan/validator/ValidationErrorNotFoundException : com/chrynan/validator/ValidationException {
 	public fun <init> (Lcom/chrynan/validator/ValidationError;)V
 }
 
 public class com/chrynan/validator/ValidationException : java/lang/RuntimeException {
 	public fun <init> ()V
+	public final fun getErrors ()Ljava/util/List;
 }
 
 public final class com/chrynan/validator/ValidationExceptionKt {
@@ -15,36 +16,46 @@ public final class com/chrynan/validator/ValidationExceptionKt {
 	public static synthetic fun ValidationException$default (Ljava/lang/String;Lcom/chrynan/validator/ValidationResult;Lkotlin/reflect/KClass;ILjava/lang/Object;)Lcom/chrynan/validator/ValidationException;
 }
 
-public abstract class com/chrynan/validator/ValidationResult {
+public abstract interface class com/chrynan/validator/ValidationResult {
 }
 
 public final class com/chrynan/validator/ValidationResult$Invalid : com/chrynan/validator/ValidationResult {
-	public final fun component1 ()Ljava/util/Collection;
-	public final fun copy (Ljava/util/Collection;)Lcom/chrynan/validator/ValidationResult$Invalid;
-	public static synthetic fun copy$default (Lcom/chrynan/validator/ValidationResult$Invalid;Ljava/util/Collection;ILjava/lang/Object;)Lcom/chrynan/validator/ValidationResult$Invalid;
+	public static final synthetic fun box-impl (Ljava/util/List;)Lcom/chrynan/validator/ValidationResult$Invalid;
 	public fun equals (Ljava/lang/Object;)Z
-	public final fun getErrors ()Ljava/util/Collection;
+	public static fun equals-impl (Ljava/util/List;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/util/List;Ljava/util/List;)Z
+	public final fun getErrors ()Ljava/util/List;
 	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/util/List;)I
 	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/util/List;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/util/List;
 }
 
 public final class com/chrynan/validator/ValidationResult$Valid : com/chrynan/validator/ValidationResult {
+	public static final synthetic fun box-impl (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult$Valid;
 	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/Object;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/Object;Ljava/lang/Object;)Z
 	public final fun getValue ()Ljava/lang/Object;
 	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/Object;)I
 	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/Object;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/Object;
 }
 
 public final class com/chrynan/validator/ValidationResultKt {
-	public static final fun Invalid (Ljava/util/List;)Lcom/chrynan/validator/ValidationResult$Invalid;
-	public static final fun Invalid ([Lcom/chrynan/validator/ValidationError;)Lcom/chrynan/validator/ValidationResult$Invalid;
-	public static final fun Valid (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult$Valid;
+	public static final fun Invalid (Ljava/util/List;)Ljava/util/List;
+	public static final fun Invalid ([Lcom/chrynan/validator/ValidationError;)Ljava/util/List;
+	public static final fun Valid (Ljava/lang/Object;)Ljava/lang/Object;
 }
 
 public final class com/chrynan/validator/ValidationResultUtilsKt {
 	public static final fun contains (Lcom/chrynan/validator/ValidationResult;Lcom/chrynan/validator/ValidationError;)Z
 	public static final fun isInvalid (Lcom/chrynan/validator/ValidationResult;)Z
 	public static final fun isValid (Lcom/chrynan/validator/ValidationResult;)Z
+	public static final fun toResult (Lcom/chrynan/validator/ValidationResult;)Ljava/lang/Object;
 }
 
 public abstract interface class com/chrynan/validator/Validator {

@@ -9,7 +9,8 @@ import kotlin.reflect.KClass
  */
 open class ValidationException internal constructor(
     message: String? = null,
-    cause: Throwable? = null
+    cause: Throwable? = null,
+    val errors: List<ValidationError> = emptyList()
 ) : RuntimeException(message, cause)
 
 /**

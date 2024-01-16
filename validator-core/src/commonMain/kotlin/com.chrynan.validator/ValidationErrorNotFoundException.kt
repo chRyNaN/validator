@@ -6,4 +6,8 @@ package com.chrynan.validator
  *
  * This exception is thrown from the [assertContains] function.
  */
-class ValidationErrorNotFoundException(error: ValidationError) : RuntimeException("ValidationErrorNotFoundException: error = $error")
+class ValidationErrorNotFoundException(error: ValidationError) :
+    ValidationException(
+        message = "ValidationErrorNotFoundException: error = $error",
+        errors = listOf(error)
+    )
