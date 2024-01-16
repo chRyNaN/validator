@@ -1,0 +1,18 @@
+public abstract interface class com/chrynan/validator/FieldValidationError : com/chrynan/validator/ValidationError {
+	public abstract fun getField ()Lkotlin/reflect/KProperty;
+}
+
+public final class com/chrynan/validator/FieldValidationException : java/lang/RuntimeException {
+	public fun <init> ()V
+}
+
+public final class com/chrynan/validator/FieldValidationExceptionKt {
+	public static final fun FieldValidationException (Ljava/lang/String;Lkotlin/reflect/KProperty;Lcom/chrynan/validator/ValidationResult;Lkotlin/reflect/KClass;)Lcom/chrynan/validator/FieldValidationException;
+	public static synthetic fun FieldValidationException$default (Ljava/lang/String;Lkotlin/reflect/KProperty;Lcom/chrynan/validator/ValidationResult;Lkotlin/reflect/KClass;ILjava/lang/Object;)Lcom/chrynan/validator/FieldValidationException;
+}
+
+public final class com/chrynan/validator/FieldValidatorUtilsKt {
+	public static final fun isFieldInvalid (Lcom/chrynan/validator/ValidationResult;Lkotlin/reflect/KProperty;)Z
+	public static final fun isFieldValid (Lcom/chrynan/validator/ValidationResult;Lkotlin/reflect/KProperty;)Z
+}
+

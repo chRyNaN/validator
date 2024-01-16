@@ -1,0 +1,26 @@
+public abstract class com/chrynan/validator/EmailValidationError : com/chrynan/validator/ValidationError {
+	public synthetic fun <init> (Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getDetails ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/EmailValidationError$InputIsNull : com/chrynan/validator/EmailValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/EmailValidationError$InputIsNull;
+}
+
+public final class com/chrynan/validator/EmailValidationError$InvalidFormat : com/chrynan/validator/EmailValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/EmailValidationError$InvalidFormat;
+}
+
+public final class com/chrynan/validator/EmailValidator : com/chrynan/validator/Validator {
+	public static final field Companion Lcom/chrynan/validator/EmailValidator$Companion;
+	public fun <init> ()V
+	public synthetic fun invoke (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun invoke (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+	public synthetic fun validate (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun validate (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+}
+
+public final class com/chrynan/validator/EmailValidator$Companion {
+}
+

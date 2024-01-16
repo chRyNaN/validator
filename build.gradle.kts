@@ -3,35 +3,21 @@ import com.chrynan.validator.buildSrc.LibraryConstants
 group = LibraryConstants.group
 version = LibraryConstants.versionName
 
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-        maven { url = uri("https://repo.repsy.io/mvn/chrynan/public") }
-    }
-    dependencies {
-        classpath("com.android.tools.build:gradle:4.2.2")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
-        classpath("org.jetbrains.dokka:dokka-gradle-plugin:1.7.10")
-        classpath("org.jetbrains.kotlin:kotlin-serialization:1.7.10")
-    }
-}
-
-apply(plugin = "org.jetbrains.dokka")
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        maven { url = uri("https://repo.repsy.io/mvn/chrynan/public") }
-    }
+plugins {
+    kotlin("jvm") version "1.9.21" apply false
+    kotlin("android") version "1.9.21" apply false
+    kotlin("multiplatform") version "1.9.21" apply false
+    kotlin("plugin.serialization") version "1.9.21" apply false
+    id("com.android.library") version "8.2.0" apply false
+    id("com.android.application") version "8.2.0" apply false
+    id("org.jetbrains.dokka") version "1.9.10"
+    id("org.jetbrains.kotlinx.binary-compatibility-validator") version "0.13.2"
 }
 
 rootProject.plugins.withType<org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootPlugin> {
     rootProject.the<org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootExtension>().nodeVersion = "16.0.0"
 }
 
-// Documentation
 tasks.named<org.jetbrains.dokka.gradle.DokkaMultiModuleTask>("dokkaGfmMultiModule").configure {
     outputDirectory.set(file("${projectDir.path}/docs"))
 }

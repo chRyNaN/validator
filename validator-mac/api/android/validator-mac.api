@@ -1,0 +1,26 @@
+public abstract class com/chrynan/validator/MacAddressValidationError : com/chrynan/validator/ValidationError {
+	public synthetic fun <init> (Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getDetails ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/MacAddressValidationError$InputIsNull : com/chrynan/validator/MacAddressValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/MacAddressValidationError$InputIsNull;
+}
+
+public final class com/chrynan/validator/MacAddressValidationError$InvalidFormat : com/chrynan/validator/MacAddressValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/MacAddressValidationError$InvalidFormat;
+}
+
+public final class com/chrynan/validator/MacAddressValidator : com/chrynan/validator/Validator {
+	public static final field Companion Lcom/chrynan/validator/MacAddressValidator$Companion;
+	public fun <init> ()V
+	public synthetic fun invoke (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun invoke (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+	public synthetic fun validate (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun validate (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+}
+
+public final class com/chrynan/validator/MacAddressValidator$Companion {
+}
+

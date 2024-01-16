@@ -1,4 +1,7 @@
 import com.chrynan.validator.buildSrc.LibraryConstants
+import com.chrynan.validator.buildSrc.isBuildingOnLinux
+import com.chrynan.validator.buildSrc.isBuildingOnOSX
+import com.chrynan.validator.buildSrc.isBuildingOnWindows
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -12,44 +15,78 @@ group = LibraryConstants.group
 version = LibraryConstants.versionName
 
 kotlin {
-    android {
-        publishAllLibraryVariants()
-    }
-    targets {
-        android()
-        jvm()
-        js(BOTH) {
-            browser {
-                testTask {
-                    useKarma {
-                        useFirefox()
-                    }
+    applyDefaultHierarchyTemplate()
+
+    androidTarget()
+
+    jvm()
+
+    js(IR) {
+        browser {
+            testTask {
+                useKarma {
+                    useFirefox()
                 }
             }
-            nodejs()
         }
-        ios()
-        iosSimulatorArm64()
+        nodejs()
     }
+
+    @Suppress("OPT_IN_USAGE")
+    wasmJs {
+        browser {
+            testTask {
+                useKarma {
+                    useFirefox()
+                }
+            }
+        }
+    }
+
+    if (isBuildingOnOSX()) {
+        iosX64()
+        iosArm64()
+        iosSimulatorArm64()
+        tvosX64()
+        tvosArm64()
+        watchosX64()
+        watchosArm64()
+        macosX64()
+        macosArm64()
+    }
+
+    if (isBuildingOnLinux()) {
+        linuxX64()
+    }
+
+    if (isBuildingOnWindows()) {
+        mingwX64()
+    }
+
     sourceSets {
         val commonMain by getting {
             dependencies {
                 api(project(":validator-core"))
             }
         }
+
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
             }
         }
-        val iosMain by sourceSets.getting
-        val iosSimulatorArm64Main by sourceSets.getting
-        iosSimulatorArm64Main.dependsOn(iosMain)
+
+        if (isBuildingOnOSX()) {
+            val iosMain by sourceSets.getting
+            val iosSimulatorArm64Main by sourceSets.getting
+            iosSimulatorArm64Main.dependsOn(iosMain)
+        }
     }
 }
 
 android {
     compileSdk = LibraryConstants.Android.compileSdkVersion
+    namespace = "com.chrynan.validator.phone"
 
     defaultConfig {
         minSdk = LibraryConstants.Android.minSdkVersion

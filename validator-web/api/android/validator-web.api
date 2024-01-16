@@ -1,0 +1,198 @@
+public abstract class com/chrynan/validator/Ipv4AddressValidationError : com/chrynan/validator/ValidationError {
+	public synthetic fun <init> (Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getDetails ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/Ipv4AddressValidationError$InputIsNull : com/chrynan/validator/Ipv4AddressValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/Ipv4AddressValidationError$InputIsNull;
+}
+
+public final class com/chrynan/validator/Ipv4AddressValidationError$InvalidFormat : com/chrynan/validator/Ipv4AddressValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/Ipv4AddressValidationError$InvalidFormat;
+}
+
+public final class com/chrynan/validator/Ipv4AddressValidator : com/chrynan/validator/Validator {
+	public static final field Companion Lcom/chrynan/validator/Ipv4AddressValidator$Companion;
+	public fun <init> ()V
+	public synthetic fun invoke (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun invoke (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+	public synthetic fun validate (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun validate (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+}
+
+public final class com/chrynan/validator/Ipv4AddressValidator$Companion {
+}
+
+public abstract class com/chrynan/validator/Ipv6AddressValidationError : com/chrynan/validator/ValidationError {
+	public synthetic fun <init> (Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getDetails ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/Ipv6AddressValidationError$InputIsNull : com/chrynan/validator/Ipv6AddressValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/Ipv6AddressValidationError$InputIsNull;
+}
+
+public final class com/chrynan/validator/Ipv6AddressValidationError$InvalidFormat : com/chrynan/validator/Ipv6AddressValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/Ipv6AddressValidationError$InvalidFormat;
+}
+
+public final class com/chrynan/validator/Ipv6AddressValidator : com/chrynan/validator/Validator {
+	public static final field Companion Lcom/chrynan/validator/Ipv6AddressValidator$Companion;
+	public fun <init> ()V
+	public synthetic fun invoke (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun invoke (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+	public synthetic fun validate (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun validate (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+}
+
+public final class com/chrynan/validator/Ipv6AddressValidator$Companion {
+}
+
+public abstract class com/chrynan/validator/UriValidationError : com/chrynan/validator/ValidationError {
+	public synthetic fun <init> (Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getDetails ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/UriValidationError$FirstPathSegmentContainsColon : com/chrynan/validator/UriValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/UriValidationError$FirstPathSegmentContainsColon;
+}
+
+public final class com/chrynan/validator/UriValidationError$InputIsBlank : com/chrynan/validator/UriValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/UriValidationError$InputIsBlank;
+}
+
+public final class com/chrynan/validator/UriValidationError$InputIsNull : com/chrynan/validator/UriValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/UriValidationError$InputIsNull;
+}
+
+public final class com/chrynan/validator/UriValidationError$InvalidCharactersUsed : com/chrynan/validator/UriValidationError {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/chrynan/validator/UriValidationError$InvalidCharactersUsed;
+	public static synthetic fun copy$default (Lcom/chrynan/validator/UriValidationError$InvalidCharactersUsed;Ljava/lang/String;ILjava/lang/Object;)Lcom/chrynan/validator/UriValidationError$InvalidCharactersUsed;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCharacters ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/UriValidationError$InvalidIpv6Host : com/chrynan/validator/UriValidationError {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/chrynan/validator/UriValidationError$InvalidIpv6Host;
+	public static synthetic fun copy$default (Lcom/chrynan/validator/UriValidationError$InvalidIpv6Host;Ljava/lang/String;ILjava/lang/Object;)Lcom/chrynan/validator/UriValidationError$InvalidIpv6Host;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getHost ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/UriValidationError$InvalidPathStart : com/chrynan/validator/UriValidationError {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/chrynan/validator/UriValidationError$InvalidPathStart;
+	public static synthetic fun copy$default (Lcom/chrynan/validator/UriValidationError$InvalidPathStart;Ljava/lang/String;ILjava/lang/Object;)Lcom/chrynan/validator/UriValidationError$InvalidPathStart;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCharacters ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/UriValidationError$InvalidSchemeFormat : com/chrynan/validator/UriValidationError {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/chrynan/validator/UriValidationError$InvalidSchemeFormat;
+	public static synthetic fun copy$default (Lcom/chrynan/validator/UriValidationError$InvalidSchemeFormat;Ljava/lang/String;ILjava/lang/Object;)Lcom/chrynan/validator/UriValidationError$InvalidSchemeFormat;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getScheme ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/UriValidationError$InvalidTextBetweenHostAndPort : com/chrynan/validator/UriValidationError {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/chrynan/validator/UriValidationError$InvalidTextBetweenHostAndPort;
+	public static synthetic fun copy$default (Lcom/chrynan/validator/UriValidationError$InvalidTextBetweenHostAndPort;Ljava/lang/String;ILjava/lang/Object;)Lcom/chrynan/validator/UriValidationError$InvalidTextBetweenHostAndPort;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getText ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/UriValidationError$MissingSchemeSeparator : com/chrynan/validator/UriValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/UriValidationError$MissingSchemeSeparator;
+}
+
+public final class com/chrynan/validator/UriValidationError$PathIsBlank : com/chrynan/validator/UriValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/UriValidationError$PathIsBlank;
+}
+
+public final class com/chrynan/validator/UriValidationError$PortIsNotANumber : com/chrynan/validator/UriValidationError {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/chrynan/validator/UriValidationError$PortIsNotANumber;
+	public static synthetic fun copy$default (Lcom/chrynan/validator/UriValidationError$PortIsNotANumber;Ljava/lang/String;ILjava/lang/Object;)Lcom/chrynan/validator/UriValidationError$PortIsNotANumber;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getPort ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/UriValidationError$SchemeIsBlank : com/chrynan/validator/UriValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/UriValidationError$SchemeIsBlank;
+}
+
+public final class com/chrynan/validator/UriValidationError$SchemeStartsWithInvalidCharacter : com/chrynan/validator/UriValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/UriValidationError$SchemeStartsWithInvalidCharacter;
+}
+
+public final class com/chrynan/validator/UriValidator : com/chrynan/validator/Validator {
+	public static final field Companion Lcom/chrynan/validator/UriValidator$Companion;
+	public fun <init> ()V
+	public synthetic fun invoke (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun invoke (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+	public synthetic fun validate (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun validate (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+}
+
+public final class com/chrynan/validator/UriValidator$Companion {
+}
+
+public abstract class com/chrynan/validator/UrlValidationError : com/chrynan/validator/ValidationError {
+	public synthetic fun <init> (Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getDetails ()Ljava/lang/String;
+}
+
+public final class com/chrynan/validator/UrlValidationError$InputIsNull : com/chrynan/validator/UrlValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/UrlValidationError$InputIsNull;
+}
+
+public final class com/chrynan/validator/UrlValidationError$InvalidFormat : com/chrynan/validator/UrlValidationError {
+	public static final field INSTANCE Lcom/chrynan/validator/UrlValidationError$InvalidFormat;
+}
+
+public final class com/chrynan/validator/UrlValidator : com/chrynan/validator/Validator {
+	public static final field Companion Lcom/chrynan/validator/UrlValidator$Companion;
+	public fun <init> ()V
+	public synthetic fun invoke (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun invoke (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+	public synthetic fun validate (Ljava/lang/Object;)Lcom/chrynan/validator/ValidationResult;
+	public fun validate (Ljava/lang/String;)Lcom/chrynan/validator/ValidationResult;
+}
+
+public final class com/chrynan/validator/UrlValidator$Companion {
+}
+
+public final class com/chrynan/validator/WebRegexConstants {
+	public static final field AUTOLINK_WEB_URL Ljava/lang/String;
+	public static final field INSTANCE Lcom/chrynan/validator/WebRegexConstants;
+	public static final field IPV6_ADDRESS Ljava/lang/String;
+	public static final field IP_ADDRESS Ljava/lang/String;
+	public static final field WEB_URL Ljava/lang/String;
+}
+
