@@ -6,7 +6,7 @@ public final class com/chrynan/validator/ValidationErrorNotFoundException : java
 	public fun <init> (Lcom/chrynan/validator/ValidationError;)V
 }
 
-public final class com/chrynan/validator/ValidationException : java/lang/RuntimeException {
+public class com/chrynan/validator/ValidationException : java/lang/RuntimeException {
 	public fun <init> ()V
 }
 

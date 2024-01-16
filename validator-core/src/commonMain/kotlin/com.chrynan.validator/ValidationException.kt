@@ -7,18 +7,19 @@ import kotlin.reflect.KClass
  *
  * This exception is thrown from the [assertValid] and [assertInvalid] functions.
  */
-class ValidationException internal constructor(
-        message: String? = null
-) : RuntimeException(message)
+open class ValidationException internal constructor(
+    message: String? = null,
+    cause: Throwable? = null
+) : RuntimeException(message, cause)
 
 /**
  * A creator function for the [ValidationException] class.
  */
 @Suppress("FunctionName")
 fun <T, E : ValidationResult<*>> ValidationException(
-        message: String? = null,
-        result: ValidationResult<T>,
-        expected: KClass<E>
+    message: String? = null,
+    result: ValidationResult<T>,
+    expected: KClass<E>
 ): ValidationException {
     val fullMessage = buildString {
         append("ValidationException: Unexpected ValidationResult: expected = $expected; actual = ${result::class}\n")
