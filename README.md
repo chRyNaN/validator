@@ -195,9 +195,9 @@ the [releases page](https://github.com/chRyNaN/validator/releases) to get the la
 
 ### Repository
 
-```groovy
+```kotlin
 repositories {
-    maven { url = "https://repo.repsy.io/mvn/chrynan/public" }
+    maven { url = uri("https://repo.repsy.io/mvn/chrynan/public") }
 }
 ```
 
@@ -205,14 +205,14 @@ repositories {
 
 **Core:**
 
-```groovy
-implementation "com.chrynan.validator:validator-core:$VERSION"
+```kotlin
+implementation("com.chrynan.validator:validator-core:$VERSION")
 ```
 
 **Dynamic String:**
 
-```groovy
-implementation "com.chrynan.validator:validator-dynamic-string:$VERSION"
+```kotlin
+implementation("com.chrynan.validator:validator-dynamic-string:$VERSION")
 ```
 
 **Email:**
@@ -223,26 +223,26 @@ implementation "com.chrynan.validator:validator-email:$VERSION"
 
 **Field:**
 
-```groovy
-implementation "com.chrynan.validator:validator-field:$VERSION"
+```kotlin
+implementation("com.chrynan.validator:validator-field:$VERSION")
 ```
 
 **Mac Address:**
 
-```groovy
-implementation "com.chrynan.validator:validator-mac:$VERSION"
+```kotlin
+implementation("com.chrynan.validator:validator-mac:$VERSION")
 ```
 
 **Phone Number:**
 
-```groovy
-implementation "com.chrynan.validator:validator-phone:$VERSION"
+```kotlin
+implementation("com.chrynan.validator:validator-phone:$VERSION")
 ```
 
 **Web:**
 
-```groovy
-implementation "com.chrynan.validator:validator-web:$VERSION"
+```kotlin
+implementation("com.chrynan.validator:validator-web:$VERSION")
 ```
 
 ## Documentation
